@@ -9,27 +9,43 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<main>
+		<section class="new-single-page">
+			<div class="container">
+				<article>
+					<h1><?php the_title(); ?></h1>
 
-		<?php
-		while ( have_posts() ) : the_post();
+					<div class="inner-content">
 
-			get_template_part( 'template-parts/content', get_post_format() );
+						<div class="row">
+							<div class="col-sm-8">
+								<?php
+									while ( have_posts() ) : the_post();
+										the_content();
+									endwhile; // End of the loop.
+								?>
+							</div>
 
-			the_post_navigation();
+							<div class="col-sm-4">
+								<?php
+									the_post_thumbnail('medium', array('class' => 'img-thumbnail img-responsive'));
+								?>
+							</div>
+						</div><!-- row -->
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+					</div>
 
-		endwhile; // End of the loop.
-		?>
+					<footer>
+						<a href="#"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> do góry</a> |
+						<a href="<?php echo home_url(); ?>"><i class="fa fa-home" aria-hidden="true"></i> do strony głównej</a>
+					</footer>
+							
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+					</article>
+							
+			</div><!-- container -->
+		</section>
+	</main>
 
 <?php
-get_sidebar();
 get_footer();

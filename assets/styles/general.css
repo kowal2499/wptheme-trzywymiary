@@ -28,11 +28,12 @@ h1 {
   padding: 6px 20px;
   padding-right: 80px;
   border-radius: 0px;
-  font-size: 1.8em;
+  font-size: 2.05em;
   font-weight: 300;
   letter-spacing: -1px;
   text-transform: uppercase;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0px 2px 1px #ccc; }
 
 .row-nomargin {
   margin: 0; }
@@ -59,10 +60,9 @@ footer .container {
 /* ******************************* UPPER BAR
  */
 #upper-contact {
-  background: url("../img/low_contrast_linen.png") repeat;
-  color: #ccc;
-  font-style: italic;
-  font-size: 1.3em;
+  background-color: #F9F9F9;
+  color: #666;
+  font-size: 1.5em;
   font-weight: 400; }
   #upper-contact img {
     height: 25px;
@@ -75,7 +75,7 @@ footer .container {
   border: none;
   border-top: 1px solid #ddd;
   border-radius: 0px;
-  box-shadow: 0px 2px 2px #ccc;
+  box-shadow: 0px 1px 6px #999;
   background-color: #FFF;
   margin-bottom: 0;
   z-index: 1000;
@@ -203,7 +203,10 @@ section.widget_erla-fader {
 /* ******************************* PARALLAX
  */
 #paralaksa {
-  background: url("../img/low_contrast_linen.png") repeat; }
+  background: url("../img/sky2.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #03283a; }
   #paralaksa .container {
     padding-top: 0px;
     padding-bottom: 0px; }
@@ -220,12 +223,18 @@ section.widget_erla-fader {
   letter-spacing: 7px; }
   .parallax p {
     position: absolute;
-    margin: 0; }
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 3px #000;
+    font-weight: bold; }
 
 /* ******************************* STRENGTHS
  */
 #strengths {
   background-color: #FEFEFE; }
+  #strengths .container {
+    margin-top: 0;
+    padding-top: 0; }
   #strengths p {
     font-size: 1.4em;
     font-weight: 300;
@@ -259,7 +268,8 @@ section.widget_erla-fader {
 #obszary {
   background-image: url("../img/tlo_kwiatki.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom; }
+  background-position: center bottom;
+  background-size: cover; }
   #obszary .content {
     margin-top: 30px;
     padding: 10px;
@@ -298,6 +308,35 @@ section.widget_erla-fader {
     right: 30px;
     height: 80px;
     width: 80px; }
+
+section#aktualnosci {
+  background: url(../img/triangles_pattern.png) repeat;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+  section#aktualnosci .post-carousel h2.post-carousel-title {
+    font-weight: 500 !important;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    line-height: 20px;
+    text-align: center;
+    word-break: keep-all;
+    padding: 10px 8px;
+    margin-top: 0 !important;
+    position: relative;
+    top: -1px; }
+    section#aktualnosci .post-carousel h2.post-carousel-title a {
+      color: #1C110A !important; }
+  section#aktualnosci .post-carousel:hover a {
+    text-decoration: underline; }
+  section#aktualnosci .post-carousel-thumb {
+    position: relative; }
+  section#aktualnosci .date {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #1C110A;
+    padding: 3px 5px;
+    background-color: #FFFFFF; }
 
 .new-single-page {
   margin: 10px;

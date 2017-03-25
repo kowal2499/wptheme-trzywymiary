@@ -58,17 +58,21 @@
         para.style.fontSize = database[i]['speed'] - 0.8 + 'em';
         para.style.letterSpacing = database[i]['speed']*1.5 + 'px';
         
-        var color;
-        switch (database[i]['speed']) {
-          case 2:
-            color = 90; break;
-          case 3:
-            color = 150; break;
-          default:
-            color = 200; break;
-        }
+        // var shadow, color;
+        // switch (database[i]['speed']) {
+        //   case 2:
+        //     shadow = 3; break;
+        //   case 3:
+        //     shadow = 5; break;
+        //   default:
+        //     shadow = 3; break;
+        // }
+
+        // color = 30;
         
-        para.style.color = "rgb("+color+","+color+","+color+")";
+        // para.style.color = "rgb("+color+","+color+","+color+")";
+        // // para.style.textShadow = "0px 0px 3px #fff";
+        // para.style.textShadow = "0px 0px " + shadow + "px #eee";
         para.appendChild(node);
         bucket.appendChild(para);
       }

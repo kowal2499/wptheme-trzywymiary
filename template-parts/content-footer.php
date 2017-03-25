@@ -59,7 +59,7 @@
 
 
 		<div class="row row-nomargin text-center copyright">
-			(c) 2016 Centrum Psychoterapii - Trzy Wymiary
+			(c) 2017 Centrum Psychoterapii - Trzy Wymiary
 
 			<a href="http://erla.pl" target="_blank" class="pull-right" style="background-color: #333; padding: 2px; margin-right: 15px;">
 				<img src='<?php echo get_template_directory_uri(); ?>/assets/img/erla-logo.png'>

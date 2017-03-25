@@ -1,0 +1,1 @@
+1. content-page-zespol2.php przemianować na  content-page-zespol.php
